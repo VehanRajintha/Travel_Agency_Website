@@ -919,3 +919,174 @@ font-size: 1rem;
     right: 3rem;
   }
 }
+
+
+/*listing page*/
+.list-container{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.left-col{
+  flex-basis: 70%;
+}
+
+.right-col{
+  flex-basis: 25%;
+}
+
+.left-col h1{
+  
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.house{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px 0;
+  border-top: 1px solid #4e4e4e;
+}
+
+.house-img{
+  flex-basis: 40%;
+}
+
+.house-info{
+  flex-basis: 58%;
+  color: hwb(0 100% 0%);
+}
+
+.house-img img{
+  width: 100%;
+  border-radius: 12px;
+}
+
+.house-info h3{
+  font-weight: 600;
+  font-size: 22px;
+  margin: 4px 0;
+}
+.house-info i{
+  color: gold;
+  font-size: 18px;
+  margin: 10px 1px;
+}
+
+.house-price{
+  text-align: right;
+}
+
+.house-price h4{
+  font-size: 20px;
+}
+
+.house-price h4 span{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.sidebar{
+  border: 1px solid #4e4e4e;
+  padding: 20px 30px;
+  margin-top: 30px;
+}
+
+.sidebar h2{
+  font-weight: 500;
+}
+
+.sidebar h3{
+  font-weight: 500;
+  margin: 20px 0 10px;
+}
+
+.filter{
+  display: flex;
+  align-items: center;
+  color: #a1a1a1;
+  margin-bottom: 10px;
+}
+
+.filter p{
+  flex: 1;
+}
+
+.filter input{
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.sidebar-link{
+  text-align: right;
+  margin: 20px 0;
+}
+
+.sidebar-link a{
+  text-decoration: none;
+  color: hsl(0, 0%, 95%);
+}
+ .pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+ }
+
+ .pagination img{
+  width: 15px;
+  margin: 10px 20px;
+ }
+
+ .right-arrow{
+  transform: rotate(180deg);
+ }
+
+ .pagination span{
+  margin: 10px 8px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+ }
+ .pagination .current{
+  background-color: azure;
+  color: black;
+ }
+
+ /*Smaller screen for listing page */
+ @media only screen and (max-width: 700px){
+  .list-container{
+    margin-top: 150px;
+  }
+  .left-col,
+  .right-col,
+  .house-img,
+  .house-info{
+    flex-basis: 100%;
+  }
+  .left-col h1{
+    font-size: 22px;
+  }
+  .house-info h3{
+    font-size: 18px;
+  }
+  .house-info i{
+    font-size: 16px;
+  }
+  .pagination span{
+    margin: 10px 2px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+  }
+
+ }
+  
+ 
