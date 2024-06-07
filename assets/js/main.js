@@ -82,7 +82,7 @@ const sr = ScrollReveal({
 
 })
 
-sr.reveal(`.home__data, .explore__data, .explore__user, .footer__container`)
+sr.reveal(`.home__data, .explore__data, .explore__user, .footer__container,.left-col, .right-col, .house-img, .house-info, .list-container`)
 sr.reveal(`.home__card`, {delay: 600, distance: '100px',interval: 100})
 sr.reveal(`.about__data, .join__image`, {origin: 'right'})
 sr.reveal(`.about__image, .join__data`, {origin: 'left'})
